@@ -1,8 +1,12 @@
 CarrierWave.configure do |config|
-  config.root = Rails.root.join('tmp')
-  config.cache_dir = 'carrierwave'
-
-  config.s3_access_key_id = ENV['AKIAILKXQWKJZPLUS6MA']
-  config.s3_secret_access_key = ENV['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']
-  config.s3_bucket = ENV['focussrs']
+  config.fog_credentials = {
+    :provider               => 'AWS',
+    :aws_access_key_id      => 'AKIAILKXQWKJZPLUS6MA',
+    :aws_secret_access_key  => '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',
+    :region                 => 'us-east-1'
+  }
+  config.fog_directory  = 'focussrs'
+  config.fog_host       = 'https://assets.focussrs.com'
+  config.fog_public     = true
+  config.fog_attributes = {'Cache-Control' => 'max-age=315576000'}
 end
