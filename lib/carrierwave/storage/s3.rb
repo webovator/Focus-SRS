@@ -8,64 +8,6 @@ end
 module CarrierWave
   module Storage
 
-    ##
-    # Uploads things to Amazon S3 using the "fog" gem.
-    # You'll need to specify the access_key_id, secret_access_key and bucket.
-    #
-    #     CarrierWave.configure do |config|
-    #       config.s3_access_key_id = "xxxxxx"
-    #       config.s3_secret_access_key = "xxxxxx"
-    #       config.s3_bucket = "my_bucket_name"
-    #     end
-    #
-    # You can set the access policy for the uploaded files:
-    #
-    #     CarrierWave.configure do |config|
-    #       config.s3_access_policy = :public_read
-    #     end
-    #
-    # The default is :public_read. For more options see:
-    #
-    # http://docs.amazonwebservices.com/AmazonS3/latest/RESTAccessPolicy.html#RESTCannedAccessPolicies
-    #
-    # The following access policies are available:
-    #
-    # [:private]              No one else has any access rights.
-    # [:public_read]          The anonymous principal is granted READ access.
-    #                         If this policy is used on an object, it can be read from a
-    #                         browser with no authentication.
-    # [:public_read_write]    The anonymous principal is granted READ and WRITE access.
-    # [:authenticated_read]   Any principal authenticated as a registered Amazon S3 user
-    #                         is granted READ access.
-    #
-    # You can change the generated url to a cnamed domain by setting the cnamed config:
-    #
-    #     CarrierWave.configure do |config|
-    #       config.s3_cnamed = true
-    #       config.s3_bucket = 'bucketname.domain.tld'
-    #     end
-    #
-    # Now the resulting url will be
-    #
-    #     http://bucketname.domain.tld/path/to/file
-    #
-    # instead of
-    #
-    #     http://bucketname.domain.tld.s3.amazonaws.com/path/to/file
-    #
-    # You can specify a region. US Standard "us-east-1" is the default.
-    #
-    #     CarrierWave.configure do |config|
-    #       config.s3_region = 'eu-west-1'
-    #     end
-    #
-    # Available options are defined in Fog Storage[http://github.com/geemus/fog/blob/master/lib/fog/aws/storage.rb]
-    #
-    #     'eu-west-1' => 's3-eu-west-1.amazonaws.com'
-    #     'us-east-1' => 's3.amazonaws.com'
-    #     'ap-southeast-1' => 's3-ap-southeast-1.amazonaws.com'
-    #     'us-west-1' => 's3-us-west-1.amazonaws.com'
-    #
     class S3 < Abstract
 
       class File
