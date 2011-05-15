@@ -1,0 +1,18 @@
+<h1>Add Cards</h1>
+
+<%= form_for @card, :html=> {:multipart => true} do |f| %>
+<%= render 'shared/error_messages', :object => f.object %>
+  <div class="field">
+    <%= f.label :card_front %><br />
+    <%= f.text_area:card_front %>
+  </div>
+  <div class="field">
+    <%= f.label :card_back %><br />
+    <%= f.text_area :card_back %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Add Card" %>
+  </div>
+
+<% end %>

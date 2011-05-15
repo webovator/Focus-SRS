@@ -1,0 +1,26 @@
+<h4>Front:</h4>
+<div class="card"><%=  @card.card_front %></div><br />
+<hr />
+<h4>Back:</h4>
+<div class="card"><%= @card.card_back %></div> <br /> <br />
+<% if @card.audio_url %>
+<audio id='audioplayer' controls preload="auto" autobuffer="autobuffer"> 
+  <source src="<%= @card.audio_url.to_s %>" />
+  This browser doesn't support native audio.
+</audio>
+</audio>
+<% end %>
+<hr />
+
+
+<% if current_user.id == @card.user_id %>
+<p>Due for review on <%= @card.review_date %><br />
+<%= link_to "Edit Card",  :controller => "cards", :action => "edit" %>
+<% else %>
+<div style="float:right"> <%= button_to "Copy", copy_card_path(@card), :name => "Copy" %></div>
+
+<% end %>
+<%= link_to "All Cards", :controller => "users", :action => "card_index" %>
+
+
+

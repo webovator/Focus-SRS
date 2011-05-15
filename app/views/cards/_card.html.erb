@@ -1,0 +1,16 @@
+<br />
+    <div class="round" id="cards">
+    Front: 
+      <%= card.card_front %> <br />
+    Back:
+      <%= card.card_back %><br />
+    Created <%= time_ago_in_words(card.created_at) %> ago.<br />
+    This card will return for review in <%= pluralize(card.review_date.day - Date.today.day, 'day')  %>.<br />
+      
+      <% if current_user?(card.user) %>
+      <%= link_to "View", card %>
+      | <%= link_to "Delete", card, :method => :delete, :confirm => "本当に？　You sure?",
+                                :title => "Delete #{card.card_front}" %>
+                                  <% end %>
+</div>
+<br />

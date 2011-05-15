@@ -1,28 +1,28 @@
 FocusSrs::Application.routes.draw do
 
   devise_for :users
-#   resources :cards, :only => [ :create, :destroy, :update, :show, :edit, :index, :copy]
-#    resources :cards do
-#           member do
-#      post 'copy' 
-#    end 
-#  end 
+  resources :cards, :only => [ :create, :destroy, :update, :show, :edit, :index, :copy]
+    resources :cards do
+           member do
+      post 'copy' 
+    end 
+  end 
  
 
   root :to => "pages#home"
   
     # cards routes
   
-#  match '/setscore', :to => 'cards#setscore' 
-#  match '/addcards', :to => 'cards#new'
-#  match '/editcard', :to => 'cards#edit'
-#  match '/addtodeck',:to => 'cards#copy'
-#  match '/searchcards', :to => 'cards#search'
+  match '/setscore', :to => 'cards#setscore' 
+  match '/addcards', :to => 'cards#new'
+  match '/editcard', :to => 'cards#edit'
+  match '/addtodeck',:to => 'cards#copy'
+  match '/searchcards', :to => 'cards#search'
   
   # user routes
-#  match '/viewcards', :to => 'users#card_index'
-#  match '/reviewcards', :to => 'cards#review'
-#  match '/showback', :to => 'cards#showback'
+  match '/viewcards', :to => 'users#card_index'
+  match '/reviewcards', :to => 'cards#review'
+  match '/showback', :to => 'cards#showback'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

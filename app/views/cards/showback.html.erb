@@ -1,0 +1,31 @@
+<h1> Review Cards </h1>
+
+<h4>Front:</h4>
+<div class="card"><%= @card.card_front %></div> <br /> <br />
+
+<hr />
+
+<h4>Back:</h4><br /><br />
+
+<div class="card"><%= @card.card_back %></div> <br /> <br />
+
+
+<div id="review_buttons">
+
+<%= form_for(@card) do |f| %>
+
+<%= submit_tag 'Blank', :name => 'zero', :class => 'reviewbutton' %>
+
+<%= submit_tag 'Missed', :name => 'one', :class => 'reviewbutton' %>
+
+<%= submit_tag 'Almost', :name => 'two', :class => 'reviewbutton' %>
+
+<%= submit_tag 'Barely', :name => 'three', :class => 'reviewbutton' %>
+
+<%= submit_tag 'Right', :name => 'four', :class => 'reviewbutton'  %>
+
+<%= submit_tag 'Easy', :name => 'five', :class => 'reviewbutton'  %>
+<% end %>
+
+
+<div>

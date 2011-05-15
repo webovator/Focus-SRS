@@ -12,4 +12,11 @@ validates_presence_of :name
 validates_uniqueness_of :name, :email, :case_sensitive => false
 attr_accessible :name, :email, :password, :password_confirmation, :remember_me
 
+  has_many :cards, :dependent => :destroy
+  
+  def feed
+    # This is preliminary. See Chapter 12 for the full implementation.
+    Card.where("user_id = ?", id)
+  end
+
 end
