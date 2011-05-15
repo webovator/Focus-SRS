@@ -1,6 +1,6 @@
 FocusSrs::Application.routes.draw do
 
-#  devise_for :users
+  devise_for :users
 #   resources :cards, :only => [ :create, :destroy, :update, :show, :edit, :index, :copy]
 #    resources :cards do
 #           member do
