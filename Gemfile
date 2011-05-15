@@ -7,6 +7,8 @@ gem 'will_paginate', '3.0.pre2'
 gem 'devise', '1.1.8'
 gem 'bcrypt-ruby', '2.1.4'
 gem 'heroku', :group => :development
+gem 'carrierwave'
+gem 'fog'
 
 group :development do
   gem 'rspec-rails', '2.5.0'

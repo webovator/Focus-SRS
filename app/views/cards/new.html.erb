@@ -10,7 +10,10 @@
     <%= f.label :card_back %><br />
     <%= f.text_area :card_back %>
   </div>
-
+  <div class="field">
+    <%= f.label :audio,"Add Audio File(.ogg):" %><br />
+    <%= f.file_field :audio %>
+  </div>
   <div class="actions">
     <%= f.submit "Add Card" %>
   </div>

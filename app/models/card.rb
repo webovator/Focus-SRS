@@ -18,7 +18,7 @@ class Card < ActiveRecord::Base
 belongs_to :user
 
 attr_accessible :card_front, :card_back, :day_interval, :audio, :review_date, :setscore
-#mount_uploader :audio, AudioUploader
+mount_uploader :audio, AudioUploader
 
 validates :card_front, :presence => true
 validates :user_id, :presence => true

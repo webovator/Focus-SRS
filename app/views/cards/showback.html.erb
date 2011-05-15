@@ -9,6 +9,8 @@
 
 <div class="card"><%= @card.card_back %></div> <br /> <br />
 
+<audio id='audioplayer' controls='controls' preload='auto'>
+<source src='<%= @card.audio_url.to_s %>'/></audio>
 
 <div id="review_buttons">
 
