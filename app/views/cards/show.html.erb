@@ -3,12 +3,6 @@
 <hr />
 <h4>Back:</h4>
 <div class="card"><%= @card.card_back %></div> <br /> <br />
-<% if @card.audio_url %>
-<audio id='audioplayer' controls preload="auto" autobuffer="autobuffer"> 
-  <source src="<%= @card.audio_url.to_s %>" />
-  This browser doesn't support native audio.
-</audio>
-<% end %>
 <hr />
 
 
