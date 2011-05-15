@@ -1,0 +1,23 @@
+<div>
+<header>
+<% logo = image_tag("eyelogo.png" , :alt => "Eye Candy", :class => "") %>
+<%= link_to logo, root_path %>
+<nav class="">
+  <div id="nav">
+  <%= link_to "Home", root_path %> &nbsp;&nbsp;
+    <% if user_signed_in? %>
+  <%= link_to "Add Cards", addcards_path %> &nbsp;&nbsp;
+  <%= link_to "All Cards", cards_path %> &nbsp;&nbsp;
+  <%= link_to "Review Cards", reviewcards_path %> &nbsp;&nbsp;
+  <% end %>
+
+<% if user_signed_in? %>
+ Signed in as <%= current_user.email %>. Not you?
+ <%= link_to "Sign out", destroy_user_session_path %>
+<% else %>
+ <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in", new_user_session_path %>
+<% end %>
+</nav>
+  
+</header>
+</div>

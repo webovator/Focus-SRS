@@ -1,0 +1,314 @@
+.container {
+  width: 710px;
+}
+
+div {
+	border:0px;
+}
+
+body {
+  background: #cf8;
+}
+
+header {
+  height: 28px;
+  background:#fff;
+  border-bottom: 2px solid #ccc; 
+
+}
+
+header img {
+  float:left;
+  padding: 0px;
+  background: #fff;
+  
+}
+
+section {
+  margin-top: 2em;
+  font-size: 120%;
+  padding: 20px;
+  background: #fff;
+
+ 
+}
+
+section h1 {
+  font-size: 200%;
+}
+
+/* Links */
+
+a {
+  color: #09c;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #069;
+
+}
+
+a:visited {
+  color: #069;
+   text-decoration: none;
+}
+
+/* Navigation */
+
+nav {
+  float: center;
+}
+
+nav {
+  background-color: white;
+  padding: 0 0.7em;
+  white-space: nowrap;
+ 
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.2em 0;
+}
+
+nav ul li a {
+  padding: 0 5px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav ul li a:visited {
+  color: #09c;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #f33;
+}
+
+#nav {
+	padding-top:5px;
+	margin: auto;
+}
+
+#nav a {
+	color: #069;
+   text-decoration: none;
+}
+
+#nav a:hover {
+	color: #f93;
+   text-decoration: underline;
+}
+/* add card button */
+
+a.addcard_button {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  width: 190px;
+  color: #fff;
+  background: #c33;
+  font-size: 150%;
+  font-weight: bold;
+  padding: 20px;
+  border:2px solid #677;
+  -moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+}
+a.addcard_button:hover {
+	 margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  width: 190px;
+  color: #333;
+  background: #cf8;
+  font-size: 150%;
+  font-weight: bold;
+  padding: 20px;
+  border:2px solid #000;
+  -moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+
+}
+/* round corners */
+
+.round { 
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	 border:0px solid #677;
+	 box-shadow: 5px 5px 5px #888;
+}
+
+/*view cards formating */
+div#cards {
+	padding:20px;
+	background-color: #eef;
+	color:#000;
+	
+}
+
+div#cards a { 
+	color:#363;
+	text-decoration:none;
+
+}
+/*error message formating*/
+
+.field_with_errors {
+  margin-top: 10px;
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+.field_with_errors label {
+  color: #fff;
+}
+
+textarea.field {
+	height:50px;
+	width:650px;
+}
+
+#error_explanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/*stuff for the card*/
+
+.card {
+	text-align:center;
+	margin:auto;
+	font-size:300%;
+}
+
+/*auido formatting*/
+div#audiobox {
+	width:900px;
+	margin:auto;
+	border: 1px solid #999;
+	background-color:#fff;
+}
+audio#audioplayer {
+	margin:auto;
+	width:100%;
+}
+
+/* button formatting for review */
+.reviewbutton {
+	color:#000;
+	background-color: #cf6;
+	width:100px;
+	height:50px;
+
+}
+
+.reviewbutton:hover{
+	color:#fff;
+	background-color: #f33;
+	width:100px;
+	height:50px;
+
+}
+div#review_buttons {
+	margin:auto;
+	width:620px;
+}
+
+/* user index */
+
+ul.users {
+  margin-top: 1em;
+}
+
+.users li {
+  list-style: none;
+}
+div#user_info {
+	border-left: 2px dotted #ccc;
+	width:400px;
+	float:right;
+	margin:20px;
+	padding-left:20px;
+}
+/* friend and unfriend button */
+.friend {
+	padding-left:25px;
+	padding-right:25px;
+	background-color:#cf3;
+	color:#333;
+	font-weight:900;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+
+}
+.unfriend {
+	padding-left:25px;
+	padding-right:25px;
+	background-color:#fc3;
+	color:#333;
+	font-weight:900;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+
+}
+
+.copysubmit  {
+	margin-top:5px;
+	color:#000;
+	background-color: #9f6;
+	width:100px;
+	height:25px;
+		-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	
+
+
+}
