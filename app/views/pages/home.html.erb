@@ -10,15 +10,22 @@
     <%= f.text_area :card_back, :class => "field" %>
   </div>
   <div class="field">
-    <%= f.submit "Add Card" %>
+    <%= f.submit "Add Card", :class => "addcardhome" %>
   </div>
   <br />
   <% end %>
   <hr />
-  <h3>Recent Cards</h4>
+  <h4>Your Cards</h4>
+  <br />
   <%= render 'shared/feed' %>
 <% else %>
-<h1>Welcome to Focus SRS</h1>
-<p>Input, Review, Remember</p>
+<br />
+<center><% logo = image_tag("eyelogobig.png" , :alt => "Eye Candy", :class => "") %>
+<%= link_to logo, root_path %></center>
+<br />
+<center><h2>Input, Review, Remember</h2></center>
+<br />
+<br />
+<br />
 <%= link_to "Sign up now!", new_user_registration_path, :class => "addcard_button" %><br />
 <%end%>

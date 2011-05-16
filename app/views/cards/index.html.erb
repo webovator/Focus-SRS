@@ -1,8 +1,9 @@
-<h2>Cards カード</h2>
+<h2>Everyone's Cards</h2>
 <br />
 <br />
 <div >
-<%= will_paginate @cards %>
+<center><%= will_paginate @cards %></center>
+<br />
 <div>
 <div style="text-align:left; width: 400px; margin:auto;">
 
@@ -13,11 +14,10 @@
     Back:
       <strong><%= card.card_back %></strong><br />
     Created <%= time_ago_in_words(card.created_at) %> ago.<br />
-    This card will return for review in <%= pluralize(card.review_date.day - Date.today.day, 'day')  %>.<br />
       <%= link_to "View", card %>
       <% if current_user.id == card.user_id %>
       | <%= link_to "Delete", card, :method => :delete, :confirm => "本当に？　You sure?",
-                                :title => "Delete #{card.card_front}" %><br /> This is your card. あなたのカードです。
+                                :title => "Delete #{card.card_front}" %> | This is your card.
       <% else %>
    <div style="float:right">    <%= button_to "Add to deck", copy_card_path(card), :name => "Add to deck", :class => "copysubmit" %> </div> 
   <% end %>
@@ -26,4 +26,4 @@
   <% end %>
 </div>
 </div>
-<%= will_paginate @cards %>
+<center><%= will_paginate @cards %></center>

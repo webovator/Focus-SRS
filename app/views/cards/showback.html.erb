@@ -1,14 +1,10 @@
-<h1> Review Cards </h1>
 
-<h4>Front:</h4>
-<div class="card"><%= @card.card_front %></div> <br /> <br />
-
-<hr />
-
-<h4>Back:</h4><br /><br />
+<h4>Front:
+<%= @card.card_front %></h4>
+<h4>Back:</h4><br />
 
 <div class="card"><%= @card.card_back %></div> <br /> <br />
-
+<br /> <br />
 <div id="review_buttons">
 
 <%= form_for(@card) do |f| %>

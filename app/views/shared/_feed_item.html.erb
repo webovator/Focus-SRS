@@ -1,14 +1,16 @@
-<div>
-    <span class="content">Front: <strong><%= feed_item.card_front %></strong> | Back: <strong><%= feed_item.card_back %></strong></span>
+<tr class="<%= cycle("odd", "even", :name => "row_class") -%>">
+<td>Front:</td>
+<td><strong><%= feed_item.card_front %></strong></td>
+<td> Back:</td> <td> <strong><%= feed_item.card_back %></strong></td>
   
-
-  <div style= "float:right;">
-<% user = Card.user rescue User.find(feed_item.user_id) %>
-  <%= link_to "view", feed_item %>
-  <%= link_to "delete", feed_item, :method => :delete,
+<td>
+<div style= "float:right;">
+  <% user = Card.user rescue User.find(feed_item.user_id) %>
+    <%= link_to "view", feed_item %>
+    <%= link_to "delete", feed_item, :method => :delete,
                                      :confirm => "You sure?",
                                      :title => feed_item.card_front %>
   </div>
 
-</div>
-<hr />
+</td>
+  </tr>

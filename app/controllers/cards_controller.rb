@@ -28,7 +28,7 @@ before_filter :authenticate_user!
     @card = current_user.cards.build(params[:card])
     if @card.save
      flash[:success] = "Card #{@card.card_front} successfully added!"
-     redirect_to addcards_path
+     redirect_to root_path
     else
       @title = "Add Cards"
       render 'new'
@@ -78,7 +78,7 @@ before_filter :authenticate_user!
     end
     if @card.new_record?
         flash[:success] = "Card #{@card.card_front} successfully added!"
-        redirect_to addcards_path
+        redirect_to root_path
       else 
         flash[:success] = "Card #{@card.card_front} successfully updated!"
         redirect_to root_path

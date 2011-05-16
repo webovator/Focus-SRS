@@ -6,15 +6,31 @@ div {
 	border:0px;
 }
 
+div#main_wrapper {
+	background: #fff;
+	width:800px;
+	margin: auto;
+	margin-top: 20px;
+	height: 1800px
+    border:2px solid #677;
+    -moz-box-shadow: 10px 10px 5px #888;
+-webkit-box-shadow: 10px 10px 5px #888;
+box-shadow: 10px 10px 5px #888;
+}
+
 body {
   background: #cf8;
+}
+
+.even{
+	background:#ffc;
 }
 
 header {
   height: 28px;
   background:#fff;
-  border-bottom: 2px solid #ccc; 
-
+  padding-top:20px;
+  
 }
 
 header img {
@@ -40,7 +56,7 @@ section h1 {
 /* Links */
 
 a {
-  color: #09c;
+  color: #990033;
   text-decoration: none;
 }
 
@@ -58,6 +74,8 @@ a:visited {
 
 nav {
   float: center;
+  margin: auto;
+  width:270px;
 }
 
 nav {
@@ -87,7 +105,7 @@ nav ul li a {
 }
 
 nav ul li a:visited {
-  color: #09c;
+  color: #990033;
   text-decoration: none;
 }
 
@@ -102,15 +120,34 @@ nav ul li a:hover {
 }
 
 #nav a {
-	color: #069;
+	color: #990033;
    text-decoration: none;
 }
+
+.cards a { color:#990033; }
 
 #nav a:hover {
 	color: #f93;
    text-decoration: underline;
 }
 /* add card button */
+.addcardhome {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  width: 190px;
+  color: #fff;
+  background: #c33;
+  font-size: 150%;
+  font-weight: bold;
+  padding: 20px;
+  border:2px solid #677;
+  -moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+}
 
 a.addcard_button {
   margin-left: auto;
@@ -153,8 +190,7 @@ a.addcard_button:hover {
 	-moz-border-radius: 25px;
 	-webkit-border-radius: 25px;
 	border-radius: 25px;
-	 border:0px solid #677;
-	 box-shadow: 5px 5px 5px #888;
+
 }
 
 /*view cards formating */
@@ -276,28 +312,8 @@ div#user_info {
 	padding-left:20px;
 }
 /* friend and unfriend button */
-.friend {
-	padding-left:25px;
-	padding-right:25px;
-	background-color:#cf3;
-	color:#333;
-	font-weight:900;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
 
-}
-.unfriend {
-	padding-left:25px;
-	padding-right:25px;
-	background-color:#fc3;
-	color:#333;
-	font-weight:900;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
 
-}
 
 .copysubmit  {
 	margin-top:5px;

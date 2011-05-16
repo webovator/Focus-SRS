@@ -70,7 +70,7 @@ before_save :default_values
   
 def self.search(search)
   if search
-    where('LOWER(card_front) LIKE ?', "%#{search.downcase}%")
+    where('LOWER(card_front) || LOWER(card_back)  LIKE ?', "%#{search.downcase}%")
   else
     scoped
   end

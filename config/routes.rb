@@ -11,7 +11,11 @@ FocusSrs::Application.routes.draw do
 
   root :to => "pages#home"
   
-    # cards routes
+  #pages routes
+  
+  match '/about', :to => 'pages#about'
+ 
+  # cards routes
   
   match '/setscore', :to => 'cards#setscore' 
   match '/addcards', :to => 'cards#new'
