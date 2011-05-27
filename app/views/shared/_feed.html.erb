@@ -1,5 +1,4 @@
 <% unless @feed_items.empty? %>
-  <h4>You have <%= pluralize(@feed_items.count, 'card') %></h4>
     <center><%= will_paginate @feed_items %></center><br />
   <div class="cards">
   <table>
