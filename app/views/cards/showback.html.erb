@@ -9,17 +9,17 @@
 
 <%= form_for(@card) do |f| %>
 
-<%= submit_tag 'Blank', :name => 'zero', :class => 'reviewbutton' %>
+<%= f.submit 'Blank', :name => 'zero', :class => 'reviewbutton' %>
 
-<%= submit_tag 'Missed', :name => 'one', :class => 'reviewbutton' %>
+<%= f.submit 'Missed', :name => 'one', :class => 'reviewbutton' %>
 
-<%= submit_tag 'Almost', :name => 'two', :class => 'reviewbutton' %>
+<%= f.submit 'Almost', :name => 'two', :class => 'reviewbutton' %>
 
-<%= submit_tag 'Barely', :name => 'three', :class => 'reviewbutton' %>
+<%= f.submit 'Barely', :name => 'three', :class => 'reviewbutton' %>
 
-<%= submit_tag 'Right', :name => 'four', :class => 'reviewbutton'  %>
+<%= f.submit 'Right', :name => 'four', :class => 'reviewbutton'  %>
 
-<%= submit_tag 'Easy', :name => 'five', :class => 'reviewbutton'  %>
+<%= f.submit 'Easy', :name => 'five', :class => 'reviewbutton'  %>
 <% end %>
 
 
