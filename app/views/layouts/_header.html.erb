@@ -16,13 +16,12 @@ Beta
 
   </div>
 </nav>
+<%= render 'shared/error_messages', :object => f.object %>
 <br />
   <div style="float:right;">
     <% form_tag cards_path, :method => 'get' do %>
-
      <%= text_field_tag :search, params[:search] %>
          <%= submit_tag I18n.translate('cardsearch'), :name => nil %><br />
- 
     <% end %>
 </div>
 </header>
