@@ -2,13 +2,7 @@
 <% logo = image_tag("eyelogo.png" , :alt => "Eye Candy", :class => "") %>
 <%= link_to logo, root_path %>
 Beta
-<div style="float:right; width:210px;">
-<% if user_signed_in? %>
- Welcome <%= current_user.name %>. Not you?
- <%= link_to "Sign out", destroy_user_session_path %>
 
-<% end %>
-</div>
 <div style="float:right;">
     <% form_tag cards_path, :method => 'get' do %>
 
