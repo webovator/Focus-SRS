@@ -10,9 +10,9 @@
     <%= f.text_area :card_back, :class => "field" %>
   </div>
   <div style="height:100px;">
- <div style="float:left;"><%= f.submit "Add Card", :class => "addcardhome" %></div>
+ <div style="float:left;"><%= f.submit I18n.translate('addcard'), :class => "addcardhome" %></div>
   <% end %>
-  <div style="float:right;"><%= button_to "Review Cards", reviewcards_path, :class => "addcardhome" %></div>
+  <div style="float:right;"><%= button_to(I18n.translate('reviewcard'), reviewcards_path, :class => "addcardhome") %></div>
   
     </div>
   <br />

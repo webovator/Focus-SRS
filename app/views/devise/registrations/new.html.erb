@@ -8,14 +8,21 @@
 
   <p><%= f.label :email %><br />
   <%= f.text_field :email %></p>
+  
+  <p>
+  <%= f.label :language, "Language" %><br />
+  <%= f.select :language, [['English', 'en'], ['한국어', 'ko'], ['日本語', 'ja']] %>
+  </p>
 
   <p><%= f.label :password %><br />
   <%= f.password_field :password %></p>
 
   <p><%= f.label :password_confirmation %><br />
   <%= f.password_field :password_confirmation %></p>
+  
+  
 
-  <p><%= f.submit "Sign up" %></p>
+  <p><center><%= f.submit "Sign up", :class=>"addcardhome" %></center></p>
 <% end %>
 
 <%= render :partial => "devise/shared/links" %>

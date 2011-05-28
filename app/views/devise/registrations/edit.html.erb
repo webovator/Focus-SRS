@@ -8,6 +8,11 @@
 
   <p><%= f.label :email %><br />
   <%= f.text_field :email %></p>
+  
+  <p>
+  <%= f.label :language, "Language" %><br />
+  <%= f.select :language, [['English', 'en'], ['한국어', 'ko'], ['日本語', 'ja']] %>
+  </p>
 
   <p><%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
   <%= f.password_field :password %></p>
@@ -18,7 +23,7 @@
   <p><%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
   <%= f.password_field :current_password %></p>
 
-  <p><%= f.submit "Update" %></p>
+  <p><center><%= f.submit "Update", :class=>"addcardhome" %></center></p>
 <% end %>
 
 <h3>Cancel my account</h3>

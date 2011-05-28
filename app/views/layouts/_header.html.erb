@@ -20,6 +20,7 @@ Beta
     <% if user_signed_in? %>
   <%= link_to "All Cards", cards_path %> &nbsp;&nbsp;
   <%= link_to "Review Cards", reviewcards_path %> &nbsp;&nbsp;
+  <%= link_to "User Settings", edit_user_registration_path %>
   <% else %>
   <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in", new_user_session_path %>
   <% end %>

@@ -1,5 +1,7 @@
 FocusSrs::Application.routes.draw do
 
+  resources :translations
+
   devise_for :users
   resources :cards, :only => [ :create, :destroy, :update, :show, :edit, :index, :copy]
     resources :cards do
