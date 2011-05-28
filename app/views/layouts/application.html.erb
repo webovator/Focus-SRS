@@ -20,9 +20,11 @@
 </head>
 <body>
 <div id="main_wrapper" class="round">
-<%= render 'layouts/header' %>
+
 <div class ="container">
+
 <section class="round">
+<%= render 'layouts/header' %>
         <% flash.each do |key, value| %>
           <div class="flash <%= key %>"><%= value %></div>
         <% end %>
