@@ -2,8 +2,6 @@
 <% logo = image_tag("eyelogo.png" , :alt => "Eye Candy", :class => "") %>
 <%= link_to logo, root_path %>
 Beta
-
-
 <nav class="">
   <div id="nav">
   <%= link_to I18n.translate('home'), root_path %> &nbsp;&nbsp;
@@ -17,6 +15,7 @@ Beta
   <% end %>
 
   </div>
+</nav>
   <div style="float:right;">
     <% form_tag cards_path, :method => 'get' do %>
 
@@ -25,6 +24,5 @@ Beta
  
     <% end %>
 </div>
-</nav>
   
 </header>
