@@ -14,6 +14,8 @@ FocusSrs::Application.routes.draw do
   #pages routes
   
   match '/about', :to => 'pages#about'
+  
+  Match '/new_user_registration', :to => 'users#sign_up'
  
   # cards routes
   
