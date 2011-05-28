@@ -5,6 +5,18 @@
 # http://www.twitter.com/paranoiase
 
 ko:
+
+  addcard: "카드를 추가"
+  reviewcard: "카드를 검토가"
+  cardfront: "카드의 앞면"
+  cardback: "다시 카드"
+  allcards: "모든 카드"
+  cardsearch: "카드 검색"
+  
+  home: "홈"
+  about: "정보"
+  usersettings: "사용자 설정"
+
   date:
     formats:
       default: "%Y/%m/%d"
