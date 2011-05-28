@@ -69,7 +69,7 @@ before_filter :authenticate_user!
 
   if @card.update_attributes(params[:card]) 
      if params[:five] || params[:four] || params[:three] || params[:two] || params[:one] || params[:zero]
-     flash[:success] = "Card #{@card.card_front} reviewed! It will return in #{pluralize(@card.day_interval.floor, 'day')}!"
+     flash[:success] = "Card #{@card.card_front} reviewed! It will return in" pluralize(@card.day_interval.floor, 'day') "!"
      redirect_to reviewcards_path
     else 
     if  params[:copy]
