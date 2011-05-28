@@ -3,14 +3,7 @@
 <%= link_to logo, root_path %>
 Beta
 
-<div style="float:right;">
-    <% form_tag cards_path, :method => 'get' do %>
 
-     <%= text_field_tag :search, params[:search] %>
-         <%= submit_tag I18n.translate('cardsearch'), :name => nil %>
- 
-    <% end %>
-            </div>
 <nav class="">
   <div id="nav">
   <%= link_to I18n.translate('home'), root_path %> &nbsp;&nbsp;
@@ -24,6 +17,14 @@ Beta
   <% end %>
 
   </div>
+  <div style="float:right;">
+    <% form_tag cards_path, :method => 'get' do %>
+
+     <%= text_field_tag :search, params[:search] %>
+         <%= submit_tag I18n.translate('cardsearch'), :name => nil %>
+ 
+    <% end %>
+</div>
 </nav>
   
 </header>
