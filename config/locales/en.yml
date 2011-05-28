@@ -3,3 +3,14 @@
 
 en:
   hello: "Hello world"
+
+  addcard: "Add Card"
+  reviewcard: "Review Cards"
+  cardfront: "Card Front"
+  cardback: "Card Back"
+  allcards: "All Cards"
+  cardsearch: "Card Search"
+  
+  home: "Home"
+  about: "About"
+  usersettings: "User Settings"
