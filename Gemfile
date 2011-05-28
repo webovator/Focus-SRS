@@ -8,6 +8,7 @@ gem 'devise', '1.1.8'
 gem 'bcrypt-ruby', '2.1.4'
 gem 'heroku', :group => :development
 gem 'redis'
+gem 'SystemTimer'
 
 group :development do
   gem 'rspec-rails', '2.5.0'
