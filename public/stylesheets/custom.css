@@ -75,7 +75,7 @@ a:visited {
 nav {
   float: center;
   margin: auto;
-  width:380px;
+  float:right;
 }
 
 nav {
