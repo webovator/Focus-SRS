@@ -5,6 +5,19 @@
 #  - Tsutomu Kuroda (t-kuroda@oiax.jp)
 
 ja:
+
+
+  addcard: "カードを追加"
+  reviewcard: "カードのレビュー"
+  cardfront: "カードの前面"
+  cardback: "カードの裏面"
+  allcards: "すべてのカード"
+  cardsearch: "カードを検索"
+  
+  home: "ホーム"
+  about: "ついて"
+  usersettings: "ユーザー設定"
+  
   date:
     formats:
       default: "%Y/%m/%d"
