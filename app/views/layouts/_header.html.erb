@@ -6,10 +6,12 @@ Beta
 <% if user_signed_in? %>
  Welcome <%= current_user.name %>. Not you?
  <%= link_to "Sign out", destroy_user_session_path %>
+<div>
     <% form_tag cards_path, :method => 'get' do %>
 
      <%= text_field_tag :search, params[:search] %>
          <%= submit_tag I18n.translate('cardsearch'), :name => nil %>
+         </div>
     <% end %>
 <% end %>
 </div>
