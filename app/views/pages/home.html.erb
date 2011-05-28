@@ -10,11 +10,11 @@
 <%= form_for @card, :html=> {:multipart => true} do |f| %>
 <%= render 'shared/error_messages', :object => f.object %>
   <div class="field">
-    <p><%=  t 'cardfront' %></p>
+    <strong><p><%=  t 'cardfront' %></p></strong>
     <%= f.text_area:card_front, :class => "field" %>
   </div>
   <div class="field">
-   <p><%=  t 'cardback'%></p>
+   <strong><p><%=  t 'cardback'%></p></strong>
     <%= f.text_area :card_back, :class => "field" %>
   </div>
   <div style="height:100px;">
