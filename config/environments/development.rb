@@ -32,3 +32,4 @@ FocusSrs::Application.configure do
   config.action_dispatch.best_standards_support = :builtin
 end
 
+ENV["REDISTOGO_URL"] = 'redis://username:password@my.host:6789'

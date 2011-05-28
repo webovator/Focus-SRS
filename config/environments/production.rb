@@ -52,3 +52,5 @@ FocusSrs::Application.configure do
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
 end
+
+ENV["REDISTOGO_URL"] = 'redis://username:password@my.host:6789'
