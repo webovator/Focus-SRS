@@ -9,15 +9,6 @@ gem 'bcrypt-ruby', '2.1.4'
 gem 'heroku', :group => :development
 
 
-# Rails 3.1 - Asset Pipeline
-gem 'json'
-gem 'sass'
-gem 'coffee-script'
-gem 'uglifier'
-# Rails 3.1 - JavaScript
-gem 'jquery-rails'
-
-
 group :development do
   gem 'rspec-rails', '2.5.0'
   gem 'annotate-models', '1.0.4'
@@ -31,11 +22,6 @@ group :test do
   gem 'factory_girl_rails', '1.0'
 end
 
-# Rails 3.1 - Heroku
-group :production do
-  gem 'therubyracer-heroku', '0.8.1.pre3'
-  gem 'pg'
-end
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
