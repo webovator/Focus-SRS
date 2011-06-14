@@ -136,6 +136,7 @@ nav ul li a:hover {
 margin-left: auto;
 margin-right: auto;
 width: 186px;
+height:65px;
 border-radius:14px;
 -webkit-border-radius: 14px;
 -moz-border-radius: 14px;
@@ -156,6 +157,7 @@ font: 14px/58px "Helvetica";
 margin-left: auto;
 margin-right: auto;
 width: 186px;
+height:65px;
 border-radius:14px;
 -webkit-border-radius: 14px;
 -moz-border-radius: 14px;
@@ -274,6 +276,7 @@ audio#audioplayer {
 	margin-right: auto;
 	color:#fff;
 	width:100px;
+	height:65px;
 	border-radius: 14px;
 	-webkit-border-radius: 14px;
 	-mox-border-radius: 14px;
@@ -295,6 +298,7 @@ audio#audioplayer {
 	margin-right: auto;
 	color:#fff;
 	width:100px;
+	height:65px;
 	border-radius: 14px;
 	-webkit-border-radius: 14px;
 	-mox-border-radius: 14px;
